@@ -1,0 +1,61 @@
+﻿#container{
+
+	outline: 5px solid black;
+	height: 800px;
+}
+
+#pt {
+	padding-top: 10px;
+	display: grid;
+  	grid-gap: 5px;
+  	grid-template-columns: repeat(18, 1fr);
+  	max-width: 1140px;
+  	margin:1em auto;
+}
+
+h1{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+}
+
+.element{
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+
+.alkali{
+	background-color: cyan;
+}
+
+.alkaline{
+	background-color: orange;
+}
+
+.transition{}
+
+.post-transition{
+	background-color: blue;
+}
+
+.metalloid{}
+
+.nonmetal{
+	background-color: green;
+}
+
+.noble-gas{
+	background-color: #92D6FF;
+}
+
+.lanthanoid{}
+
+.actinoid{}
+
+.empty{
+	visibility: hidden;
+}
