@@ -10,7 +10,7 @@ function multiplyNode(node, count, deep) {
 
 
 function insertData() {
-	const elementData = [
+	global const elementData = [
 		{
 			name: "Hydrogen",
 			symbol: "H",
@@ -266,8 +266,16 @@ function insertData() {
 	for (var i = 0; i < elements.length; i++){
 		elements[i].innerHTML = elementData[i].symbol;
 		elements[i].setAttribute("class", elementData[i].class);
+		elements[i].setAttribute("id",elementData[i].name);
+		elements[i].setAttribute("info",elementData[i].information);
 	}
+	
 }
+
+function onClick(el){
+		document.getElementById("element-name").innerHTML = el.getAttribute("id");
+		document.getElementById("element-info").innerHTML = el.getAttribute("info");
+	}
 
 window.onload = function() {
 	multiplyNode(document.querySelector('.element'), 180, true);
